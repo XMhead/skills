@@ -29,7 +29,7 @@
 这个 skill 不绑定任何项目或 CLI，任何项目都可以接入使用。
 
 1. 安装/接入：把 `agents-updater/` 目录放进项目的 skill 目录，例如 `.skillshare/skills/agents-updater/`，或对应 CLI 的 skills 路径（Codex 用 `.codex/skills/`，Claude Code 用 `.claude/skills/`）；也可以全局安装，让所有项目共用。
-2. 在 `AGENTS.md` 加规则：和记录的地平线项目注册其它 skill 的方式一样，在 `AGENTS.md` 里按任务登记入口，例如：
+2. 在 `AGENTS.md` 加规则：和注册其它 skill 的方式一样，在 `AGENTS.md` 里按任务登记入口，例如：
 
 ```markdown
 ## 技能与工作流
@@ -78,7 +78,7 @@ The goal is to keep reusable rules global, keep project facts in the project, an
 This skill is not tied to any project or CLI; any project can adopt it.
 
 1. Install: put the `agents-updater/` directory into your project's skill directory, e.g. `.skillshare/skills/agents-updater/`, or a CLI-specific path (`.codex/skills/` for Codex, `.claude/skills/` for Claude Code). You can also install it globally so all projects share it.
-2. Add a rule to `AGENTS.md`: just like the Record of Lodoss War project registers its other skills, add a task entry, e.g.:
+2. Add a rule to `AGENTS.md`: just like how other skills are registered, add a task entry, e.g.:
 
 ```markdown
 ## Skills & Workflow

@@ -24,6 +24,21 @@
 - `references/maintenance-matrix.md`：维护矩阵，记录常见维护任务的归属与取舍。
 - `agents/openai.yaml`：OpenAI Agent 元数据示例。
 
+### 使用方式
+
+这个 skill 不绑定任何项目或 CLI，任何项目都可以接入使用。
+
+1. 安装/接入：把 `agents-updater/` 目录放进项目的 skill 目录，例如 `.skillshare/skills/agents-updater/`，或对应 CLI 的 skills 路径（Codex 用 `.codex/skills/`，Claude Code 用 `.claude/skills/`）；也可以全局安装，让所有项目共用。
+2. 在 `AGENTS.md` 加规则：和记录的地平线项目注册其它 skill 的方式一样，在 `AGENTS.md` 里按任务登记入口，例如：
+
+```markdown
+## 技能与工作流
+
+- 需要新增、更新、迁移、重命名、合并、删除或审计 AGENTS.md、skills、hooks、commands、tools、references、scripts 时，使用 `agents-updater` skill（入口 `.skillshare/skills/agents-updater/SKILL.md`）。
+```
+
+3. 验证接入：让 Agent 执行一次 skill 维护任务（例如“更新 skill / 记到 skill / 审计 AGENTS”），确认它会按本 skill 的流程走；也可以用下面的审计脚本体检 skill 本身。
+
 ### 审计验证
 
 ```bash
@@ -57,6 +72,21 @@ The goal is to keep reusable rules global, keep project facts in the project, an
 - `references/eval-cases.md`: evaluation cases for validating maintenance behavior.
 - `references/maintenance-matrix.md`: a maintenance matrix recording where common maintenance tasks belong and their trade-offs.
 - `agents/openai.yaml`: an OpenAI Agent metadata example.
+
+### How to use
+
+This skill is not tied to any project or CLI; any project can adopt it.
+
+1. Install: put the `agents-updater/` directory into your project's skill directory, e.g. `.skillshare/skills/agents-updater/`, or a CLI-specific path (`.codex/skills/` for Codex, `.claude/skills/` for Claude Code). You can also install it globally so all projects share it.
+2. Add a rule to `AGENTS.md`: just like the Record of Lodoss War project registers its other skills, add a task entry, e.g.:
+
+```markdown
+## Skills & Workflow
+
+- Use the `agents-updater` skill (entry: `.skillshare/skills/agents-updater/SKILL.md`) when adding, updating, migrating, renaming, merging, deleting, or auditing AGENTS.md, skills, hooks, commands, tools, references, or scripts.
+```
+
+3. Verify: ask the agent to run a maintenance task (for example "update this skill", "remember this into a skill", or "audit AGENTS"), or audit the skill itself with the script below.
 
 ### Audit verification
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Agents-updater"
   short_description: "严格维护并降噪 AGENTS、skills 及 CLI 资源，区分全局与项目归属"
-  default_prompt: "Use $agents-updater with the strict-skill, compat-skillshare, or agents-report profile; apply the context pollution gate before expanding scope and verify one authoritative source."
+  default_prompt: "Use $agents-updater to classify task-end evidence, optimize inefficient workflows before persisting pitfalls, converge one authoritative source, and verify the change."

@@ -49,8 +49,8 @@ PYTHONUTF8=1 python agents-updater/scripts/audit_agent_skill.py agents-updater
 
 本项目由个人维护。如果对你有帮助，可以通过以下方式支持：
 
-- 中转站（赞助）：<https://www.findcg.com>
-- 推荐注册：<https://www.findcg.com/register?aff=HRTH3YQDCCAY>
+- 中转站（赞助）：<https://claudenb.com>
+- 推荐注册：<https://claudenb.com/register?aff=EGVS96QN3PEY>
 - QQ 群：`314854554`
 
 ## English
@@ -98,6 +98,6 @@ PYTHONUTF8=1 python agents-updater/scripts/audit_agent_skill.py agents-updater
 
 This project is maintained by an individual. If it helps you, you can show support in the following ways:
 
-- Relay station (sponsor): <https://www.findcg.com>
-- Referral signup: <https://www.findcg.com/register?aff=HRTH3YQDCCAY>
+- Relay station (sponsor): <https://claudenb.com>
+- Referral signup: <https://claudenb.com/register?aff=EGVS96QN3PEY>
 - QQ Group: `314854554`
